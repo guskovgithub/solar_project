@@ -33,7 +33,7 @@ def move_space_object(body, dt):
 
     ax = body.Fx/body.m
     body.Vx += ax*dt
-    body.x += (1/2)*ax*(dt**2)+body.Vx*dt  # Guskov
+    body.x += (1/2)*ax*(dt**2)+ body.Vx*dt  # Guskov
     
     # FIXME: not done recalculation of y coordinate!
     #Guskov 
